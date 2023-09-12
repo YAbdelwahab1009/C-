@@ -1,0 +1,50 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <cmath>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+
+    string firstName =  "   ";
+    string lastName  =  "   ";
+    string fullName  =  "   ";
+    string city      =  "   ";
+
+    cout << "Please enter your first name:  ";
+    getline(cin, firstName);
+    cout << " " << endl;
+
+    cout << "Please enter your second name: ";
+    getline(cin,lastName);
+    cout << " " << endl;
+
+    cout << "Please enter the state you live in: ";
+    getline(cin, city);
+    cout << " " << endl;
+
+
+    fullName = firstName + lastName;
+
+    cout << "Hi " << fullName << " so you live in " << city << "." << endl;
+
+    cout << "Your first name has " << firstName.length() << " characters." << endl;
+    
+    cout << "Your last  name has " << lastName.length() << "  characters." << endl;
+
+    int x = firstName.compare(lastName);
+        if (x != 0)
+        {
+           cout << "Your first and last names are not the same.";
+        }
+            else if (x == 0)
+            {
+                cout << "Your first and last name are the same";
+            }
+
+    system("pause>null");
+    return 0;
+}
